@@ -1,0 +1,153 @@
+.app-container {
+  height: 900px;
+  font-family: sans-serif;
+}
+
+.info-footer {
+    color: rgb(100, 100, 100);
+    text-align: center;
+    border-top: 1px solid grey;
+}
+
+.all-reports {
+  width: 848px;
+  margin: 70px auto;
+  border: 1px solid grey;
+}
+
+.all-reports::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.report-details {
+  display: inline-block;
+  float: left;
+  width: 400px;
+  margin: 11px;
+  border: 1px solid grey;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  transition: all 0.2s;
+  min-height: 150px;
+}
+
+.report-details:hover {
+  box-shadow: 1px 1px 3px grey;
+}
+
+.report-header {
+  height: 30px;
+  border-bottom: 1px solid grey;
+  background-color: steelblue;
+}
+
+.report-header-item {
+  display: inline-block;
+  float: right;
+  height: 18px;
+  width: 18px;
+  margin: 5px;
+}
+
+.report-header-item.edit {
+  background-image: url("../assets/edit_white_18dp.png");
+}
+
+.report-header-item.edit:hover,
+.report-header-item.delete:hover {
+  cursor: pointer;
+}
+
+.report-header-item.delete {
+  background-image: url("../assets/delete_white_18dp.png");
+}
+
+.report-body-item-type {
+  height: 40px;
+  border-bottom: 1px solid grey;
+}
+
+.report-body-item.type {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  font-size: 40px;
+  width: 50px;
+  border-right: 1px solid grey;
+  text-align: center;
+  line-height: 1;
+}
+
+.report-body-item.name {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  width: 335px;
+  padding: 10px 0 0 10px;
+}
+
+.report-body-item.desc {
+  height: 60px;
+  border-bottom: 1px solid grey;
+  padding-left: 10px;
+}
+
+.report-footer {
+  height: 35px;
+  padding: 7px 5px 0 5px;
+  background-color: #EBEBEB;
+}
+
+.report-footer-item.created {
+  display: inline-block;
+  float: left;
+}
+
+.report-footer-item.last {
+  display: inline-block;
+  float: right;
+}
+
+.report-details.empty {
+  text-align: center;
+  background: transparent;
+  border: 0px;
+  box-shadow: 1px 1px 3px grey;
+}
+
+.report-details.empty:hover {
+  cursor: pointer;
+}
+
+.report-details.empty .icon-container {
+  margin-top: 20px;
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border: 1px solid grey;
+  background: steelblue;
+  border-radius: 2px;
+  box-shadow: inset 0 0 5px #4659B4;
+}
+
+.report-details.empty .add-icon {
+  background-image: url("../assets/add_white_24dp.png");
+  height: 96px;
+  width: 96px;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+.report-create-modal.modal-dialog {
+  width: 30%;
+}
+
+.report-creation .report-create-body { 
+  max-height: 500px;
+}
+
+.report-create-modal .save-btn { 
+  margin-right: 10px;
+}
